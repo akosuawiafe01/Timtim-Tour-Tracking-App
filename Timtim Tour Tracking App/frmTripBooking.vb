@@ -1,4 +1,6 @@
-﻿Public Class frmTripBooking
+﻿Imports System.Data.SqlClient
+
+Public Class frmTripBooking
 
     'Transcript Table data adapter
     Dim tripBookAdapter As timtim_App_DatasetTableAdapters.TripTableAdapter = New timtim_App_DatasetTableAdapters.TripTableAdapter
@@ -25,9 +27,9 @@
 
             'recieving data from text boxes
 
-            'transRow.studID = txtStudeID.Text
             tripRow.clientID = txtClientID.Text
             tripRow.tourSiteID = cmbToursite.SelectedValue.ToString
+
 
         Catch ex As Exception
             MessageBox.Show("Data fields cannot be left null", ex.Message)
@@ -51,19 +53,35 @@
     End Sub
 
     Private Sub frmTripBooking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Timtim_App_Dataset.Tour_Site' table. You can move, or remove it, as needed.
+        Me.Tour_SiteTableAdapter.Fill(Me.Timtim_App_Dataset.Tour_Site)
+
+
 
         txtUserUser.Text = frmUserLogin.txtUsername.Text
 
         Try
-            subClientAdapter.FillBy(tripDataset.Client, txtUserUser.Text = frmUserLogin.txtUsername.Text)
-            If tripDataset.Client.Rows.Count > 0 Then
-                subClientRow = tripDataset.Client.Rows(0)
-                'txtUserUser.Text = subClientRow.
-            End If
+
+            Dim constr As String = "Data Source=.;Initial Catalog=TimtimTourApp-Db;Integrated Security=True"
+            Using con As SqlConnection = New SqlConnection(constr)
+                Using cmd As SqlCommand = New SqlCommand("Select * from Client where userName='" & frmUserLogin.txtUsername.Text & "'  ")
+                    cmd.CommandType = CommandType.Text
+                    cmd.Connection = con
+                    con.Open()
+                    Using sdr As SqlDataReader = cmd.ExecuteReader()
+                        sdr.Read()
+
+                        txtClientID.Text = sdr("clientID").ToString()
+                    End Using
+                    con.Close()
+                End Using
+            End Using
+
+
+
         Catch ex As Exception
-
+            MessageBox.Show(ex.Message)
         End Try
-
 
 
 

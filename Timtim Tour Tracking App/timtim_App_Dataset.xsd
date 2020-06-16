@@ -129,7 +129,7 @@ SELECT firstName, othername, lastName, email, DOB, phone, residenceAddress, user
               <DbSource ConnectionRef="TimtimTourApp_DbConnectionString (MySettings)" DbObjectName="[TimtimTourApp-Db].dbo.Client" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        clientID, username
+                    <CommandText>SELECT        clientID AS clientNo, username
 FROM            Client
 WHERE        (username = @params)</CommandText>
                     <Parameters>
@@ -408,7 +408,7 @@ SELECT TourSiteID, Name, Distance, Location FROM Tour_Site WHERE (TourSiteID = @
   <xs:element name="timtim_App_Dataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="timtim_App_Dataset" msprop:Generator_UserDSName="timtim_App_Dataset">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Client" msprop:Generator_TableClassName="ClientDataTable" msprop:Generator_TableVarName="tableClient" msprop:Generator_TablePropName="Client" msprop:Generator_RowDeletingName="ClientRowDeleting" msprop:Generator_RowChangingName="ClientRowChanging" msprop:Generator_RowEvHandlerName="ClientRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientRowDeleted" msprop:Generator_UserTableName="Client" msprop:Generator_RowChangedName="ClientRowChanged" msprop:Generator_RowEvArgName="ClientRowChangeEvent" msprop:Generator_RowClassName="ClientRow">
+        <xs:element name="Client" msprop:Generator_TableClassName="ClientDataTable" msprop:Generator_TableVarName="tableClient" msprop:Generator_RowChangedName="ClientRowChanged" msprop:Generator_TablePropName="Client" msprop:Generator_RowDeletingName="ClientRowDeleting" msprop:Generator_RowChangingName="ClientRowChanging" msprop:Generator_RowEvHandlerName="ClientRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientRowDeleted" msprop:Generator_RowClassName="ClientRow" msprop:Generator_UserTableName="Client" msprop:Generator_RowEvArgName="ClientRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="firstName" msprop:Generator_ColumnVarNameInTable="columnfirstName" msprop:Generator_ColumnPropNameInRow="firstName" msprop:Generator_ColumnPropNameInTable="firstNameColumn" msprop:Generator_UserColumnName="firstName" minOccurs="0">
@@ -492,7 +492,7 @@ SELECT TourSiteID, Name, Distance, Location FROM Tour_Site WHERE (TourSiteID = @
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Employee" msprop:Generator_TableClassName="EmployeeDataTable" msprop:Generator_TableVarName="tableEmployee" msprop:Generator_TablePropName="Employee" msprop:Generator_RowDeletingName="EmployeeRowDeleting" msprop:Generator_RowChangingName="EmployeeRowChanging" msprop:Generator_RowEvHandlerName="EmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeRowDeleted" msprop:Generator_UserTableName="Employee" msprop:Generator_RowChangedName="EmployeeRowChanged" msprop:Generator_RowEvArgName="EmployeeRowChangeEvent" msprop:Generator_RowClassName="EmployeeRow">
+        <xs:element name="Employee" msprop:Generator_TableClassName="EmployeeDataTable" msprop:Generator_TableVarName="tableEmployee" msprop:Generator_RowChangedName="EmployeeRowChanged" msprop:Generator_TablePropName="Employee" msprop:Generator_RowDeletingName="EmployeeRowDeleting" msprop:Generator_RowChangingName="EmployeeRowChanging" msprop:Generator_RowEvHandlerName="EmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeRowDeleted" msprop:Generator_RowClassName="EmployeeRow" msprop:Generator_UserTableName="Employee" msprop:Generator_RowEvArgName="EmployeeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="workerID" msprop:Generator_ColumnVarNameInTable="columnworkerID" msprop:Generator_ColumnPropNameInRow="workerID" msprop:Generator_ColumnPropNameInTable="workerIDColumn" msprop:Generator_UserColumnName="workerID">
@@ -533,7 +533,7 @@ SELECT TourSiteID, Name, Distance, Location FROM Tour_Site WHERE (TourSiteID = @
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Trip" msprop:Generator_TableClassName="TripDataTable" msprop:Generator_TableVarName="tableTrip" msprop:Generator_TablePropName="Trip" msprop:Generator_RowDeletingName="TripRowDeleting" msprop:Generator_RowChangingName="TripRowChanging" msprop:Generator_RowEvHandlerName="TripRowChangeEventHandler" msprop:Generator_RowDeletedName="TripRowDeleted" msprop:Generator_UserTableName="Trip" msprop:Generator_RowChangedName="TripRowChanged" msprop:Generator_RowEvArgName="TripRowChangeEvent" msprop:Generator_RowClassName="TripRow">
+        <xs:element name="Trip" msprop:Generator_TableClassName="TripDataTable" msprop:Generator_TableVarName="tableTrip" msprop:Generator_RowChangedName="TripRowChanged" msprop:Generator_TablePropName="Trip" msprop:Generator_RowDeletingName="TripRowDeleting" msprop:Generator_RowChangingName="TripRowChanging" msprop:Generator_RowEvHandlerName="TripRowChangeEventHandler" msprop:Generator_RowDeletedName="TripRowDeleted" msprop:Generator_RowClassName="TripRow" msprop:Generator_UserTableName="Trip" msprop:Generator_RowEvArgName="TripRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="clientID" msprop:Generator_ColumnVarNameInTable="columnclientID" msprop:Generator_ColumnPropNameInRow="clientID" msprop:Generator_ColumnPropNameInTable="clientIDColumn" msprop:Generator_UserColumnName="clientID" minOccurs="0">
@@ -569,7 +569,7 @@ SELECT TourSiteID, Name, Distance, Location FROM Tour_Site WHERE (TourSiteID = @
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Trip_Details" msprop:Generator_TableClassName="Trip_DetailsDataTable" msprop:Generator_TableVarName="tableTrip_Details" msprop:Generator_RowChangedName="Trip_DetailsRowChanged" msprop:Generator_TablePropName="Trip_Details" msprop:Generator_RowDeletingName="Trip_DetailsRowDeleting" msprop:Generator_RowChangingName="Trip_DetailsRowChanging" msprop:Generator_RowEvHandlerName="Trip_DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="Trip_DetailsRowDeleted" msprop:Generator_RowClassName="Trip_DetailsRow" msprop:Generator_UserTableName="Trip_Details" msprop:Generator_RowEvArgName="Trip_DetailsRowChangeEvent">
+        <xs:element name="Trip_Details" msprop:Generator_TableClassName="Trip_DetailsDataTable" msprop:Generator_TableVarName="tableTrip_Details" msprop:Generator_TablePropName="Trip_Details" msprop:Generator_RowDeletingName="Trip_DetailsRowDeleting" msprop:Generator_RowChangingName="Trip_DetailsRowChanging" msprop:Generator_RowEvHandlerName="Trip_DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="Trip_DetailsRowDeleted" msprop:Generator_UserTableName="Trip_Details" msprop:Generator_RowChangedName="Trip_DetailsRowChanged" msprop:Generator_RowEvArgName="Trip_DetailsRowChangeEvent" msprop:Generator_RowClassName="Trip_DetailsRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="firstName" msprop:Generator_ColumnVarNameInTable="columnfirstName" msprop:Generator_ColumnPropNameInRow="firstName" msprop:Generator_ColumnPropNameInTable="firstNameColumn" msprop:Generator_UserColumnName="firstName" minOccurs="0">
@@ -639,7 +639,7 @@ SELECT TourSiteID, Name, Distance, Location FROM Tour_Site WHERE (TourSiteID = @
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Sub_User" msprop:Generator_TableClassName="Sub_UserDataTable" msprop:Generator_TableVarName="tableSub_User" msprop:Generator_RowChangedName="Sub_UserRowChanged" msprop:Generator_TablePropName="Sub_User" msprop:Generator_RowDeletingName="Sub_UserRowDeleting" msprop:Generator_RowChangingName="Sub_UserRowChanging" msprop:Generator_RowEvHandlerName="Sub_UserRowChangeEventHandler" msprop:Generator_RowDeletedName="Sub_UserRowDeleted" msprop:Generator_RowClassName="Sub_UserRow" msprop:Generator_UserTableName="Sub_User" msprop:Generator_RowEvArgName="Sub_UserRowChangeEvent">
+        <xs:element name="Sub_User" msprop:Generator_TableClassName="Sub_UserDataTable" msprop:Generator_TableVarName="tableSub_User" msprop:Generator_TablePropName="Sub_User" msprop:Generator_RowDeletingName="Sub_UserRowDeleting" msprop:Generator_RowChangingName="Sub_UserRowChanging" msprop:Generator_RowEvHandlerName="Sub_UserRowChangeEventHandler" msprop:Generator_RowDeletedName="Sub_UserRowDeleted" msprop:Generator_UserTableName="Sub_User" msprop:Generator_RowChangedName="Sub_UserRowChanged" msprop:Generator_RowEvArgName="Sub_UserRowChangeEvent" msprop:Generator_RowClassName="Sub_UserRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username" minOccurs="0">
@@ -659,7 +659,7 @@ SELECT TourSiteID, Name, Distance, Location FROM Tour_Site WHERE (TourSiteID = @
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tour_Site" msprop:Generator_TableClassName="Tour_SiteDataTable" msprop:Generator_TableVarName="tableTour_Site" msprop:Generator_RowChangedName="Tour_SiteRowChanged" msprop:Generator_TablePropName="Tour_Site" msprop:Generator_RowDeletingName="Tour_SiteRowDeleting" msprop:Generator_RowChangingName="Tour_SiteRowChanging" msprop:Generator_RowEvHandlerName="Tour_SiteRowChangeEventHandler" msprop:Generator_RowDeletedName="Tour_SiteRowDeleted" msprop:Generator_RowClassName="Tour_SiteRow" msprop:Generator_UserTableName="Tour_Site" msprop:Generator_RowEvArgName="Tour_SiteRowChangeEvent">
+        <xs:element name="Tour_Site" msprop:Generator_TableClassName="Tour_SiteDataTable" msprop:Generator_TableVarName="tableTour_Site" msprop:Generator_TablePropName="Tour_Site" msprop:Generator_RowDeletingName="Tour_SiteRowDeleting" msprop:Generator_RowChangingName="Tour_SiteRowChanging" msprop:Generator_RowEvHandlerName="Tour_SiteRowChangeEventHandler" msprop:Generator_RowDeletedName="Tour_SiteRowDeleted" msprop:Generator_UserTableName="Tour_Site" msprop:Generator_RowChangedName="Tour_SiteRowChanged" msprop:Generator_RowEvArgName="Tour_SiteRowChangeEvent" msprop:Generator_RowClassName="Tour_SiteRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TourSiteID" msprop:Generator_ColumnVarNameInTable="columnTourSiteID" msprop:Generator_ColumnPropNameInRow="TourSiteID" msprop:Generator_ColumnPropNameInTable="TourSiteIDColumn" msprop:Generator_UserColumnName="TourSiteID">
@@ -722,9 +722,9 @@ SELECT TourSiteID, Name, Distance, Location FROM Tour_Site WHERE (TourSiteID = @
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="goes_x0020_on" msdata:parent="Client" msdata:child="Trip" msdata:parentkey="clientID" msdata:childkey="clientID" msprop:Generator_UserChildTable="Trip" msprop:Generator_ChildPropName="GetTripRows" msprop:Generator_UserRelationName="goes on" msprop:Generator_ParentPropName="ClientRow" msprop:Generator_RelationVarName="relationgoes_on" msprop:Generator_UserParentTable="Client" />
-      <msdata:Relationship name="is_x0020_assigned_x0020_to" msdata:parent="Employee" msdata:child="Trip" msdata:parentkey="workerID" msdata:childkey="workerID" msprop:Generator_UserChildTable="Trip" msprop:Generator_ChildPropName="GetTripRows" msprop:Generator_UserRelationName="is assigned to" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationis_assigned_to" msprop:Generator_UserParentTable="Employee" />
-      <msdata:Relationship name="FK_Trip_Tour_Site" msdata:parent="Tour_Site" msdata:child="Trip" msdata:parentkey="TourSiteID" msdata:childkey="tourSiteID" msprop:Generator_UserChildTable="Trip" msprop:Generator_ChildPropName="GetTripRows" msprop:Generator_UserRelationName="FK_Trip_Tour_Site" msprop:Generator_ParentPropName="Tour_SiteRow" msprop:Generator_RelationVarName="relationFK_Trip_Tour_Site" msprop:Generator_UserParentTable="Tour_Site" />
+      <msdata:Relationship name="goes_x0020_on" msdata:parent="Client" msdata:child="Trip" msdata:parentkey="clientID" msdata:childkey="clientID" msprop:Generator_UserChildTable="Trip" msprop:Generator_ChildPropName="GetTripRows" msprop:Generator_UserRelationName="goes on" msprop:Generator_RelationVarName="relationgoes_on" msprop:Generator_UserParentTable="Client" msprop:Generator_ParentPropName="ClientRow" />
+      <msdata:Relationship name="is_x0020_assigned_x0020_to" msdata:parent="Employee" msdata:child="Trip" msdata:parentkey="workerID" msdata:childkey="workerID" msprop:Generator_UserChildTable="Trip" msprop:Generator_ChildPropName="GetTripRows" msprop:Generator_UserRelationName="is assigned to" msprop:Generator_RelationVarName="relationis_assigned_to" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
+      <msdata:Relationship name="FK_Trip_Tour_Site" msdata:parent="Tour_Site" msdata:child="Trip" msdata:parentkey="TourSiteID" msdata:childkey="tourSiteID" msprop:Generator_UserChildTable="Trip" msprop:Generator_ChildPropName="GetTripRows" msprop:Generator_UserRelationName="FK_Trip_Tour_Site" msprop:Generator_RelationVarName="relationFK_Trip_Tour_Site" msprop:Generator_UserParentTable="Tour_Site" msprop:Generator_ParentPropName="Tour_SiteRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
