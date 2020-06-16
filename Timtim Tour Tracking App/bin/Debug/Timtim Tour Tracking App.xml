@@ -1,0 +1,191 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Timtim Tour Tracking App
+</name>
+</assembly>
+<members>
+<member name="T:Timtim_Tour_Tracking_App.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Timtim_Tour_Tracking_App.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Timtim_Tour_Tracking_App.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.ClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.EmployeeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.TripDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Trip_DetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Sub_UserDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Tour_SiteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.ClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.EmployeeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.TripRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Trip_DetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Sub_UserRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Tour_SiteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.ClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.EmployeeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.TripRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Trip_DetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Sub_UserRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_Dataset.Tour_SiteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.ClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.EmployeeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TripTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.Trip_DetailsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.Sub_UserTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.Tour_SiteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Timtim_Tour_Tracking_App.timtim_App_Dataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(Timtim_Tour_Tracking_App.timtim_App_Dataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(Timtim_Tour_Tracking_App.timtim_App_Dataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager.UpdateAll(Timtim_Tour_Tracking_App.timtim_App_Dataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Timtim_Tour_Tracking_App.timtim_App_DatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

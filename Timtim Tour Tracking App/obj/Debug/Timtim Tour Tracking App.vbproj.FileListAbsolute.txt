@@ -1,0 +1,18 @@
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\bin\Debug\Timtim Tour Tracking App.exe.config
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\bin\Debug\Timtim Tour Tracking App.exe
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\bin\Debug\Timtim Tour Tracking App.pdb
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\bin\Debug\Timtim Tour Tracking App.xml
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim Tour Tracking App.vbprojAssemblyReference.cache
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.frmEmployeeLogin.resources
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.frmTripBooking.resources
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.frmTripMenu.resources
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.frmUserLogin.resources
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.Resources.resources
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim Tour Tracking App.vbproj.GenerateResource.cache
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim Tour Tracking App.vbproj.CoreCompileInputs.cache
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim Tour Tracking App.exe
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim Tour Tracking App.xml
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim Tour Tracking App.pdb
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.frmBookedTours.resources
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.frmClientList.resources
+C:\Users\Inspiron\source\repos\Timtim Tour Tracking App\Timtim Tour Tracking App\obj\Debug\Timtim_Tour_Tracking_App.frmEmployeeMenu.resources
